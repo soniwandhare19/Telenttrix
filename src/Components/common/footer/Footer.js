@@ -1,4 +1,3 @@
-
 import { FaLinkedin, FaFacebookF, FaXTwitter, FaInstagram } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 
@@ -55,7 +54,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-6">
-
+    
         <div className="flex flex-col md:flex-row md:items-center gap-6">
           <h1 className="text-lg md:text-2xl font-medium text-center md:text-left">
             CONTACT US
@@ -76,6 +75,7 @@ const Footer = () => {
           </div>
         </div>
 
+      
         <div className="flex flex-col md:flex-row items-center gap-6">
           <h1 className="text-lg md:text-xl font-medium">FOLLOW US</h1>
           <div className="flex space-x-4">
@@ -87,6 +87,7 @@ const Footer = () => {
         </div>
       </div>
 
+    
       
     </footer>
     <div className="bg-[#1f1f1f] text-center text-sm text-white w-full flex justify-around py-5">

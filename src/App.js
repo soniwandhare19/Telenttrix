@@ -6,7 +6,7 @@ import ContactUs from './Components/pages/contact/Contact';
 import Community from './Components/pages/community/Community';
 import Solution from './Components/pages/Solutions/Solutions';
 import Careers from './Components/pages/careers/Career';
-
+import Home from './Components/pages/home/Home';
 
 const App = () =>{
   return (
@@ -15,6 +15,9 @@ const App = () =>{
      <Header/>
 
        <Routes>
+
+          <Route path="/" element={<Home/>} />
+          
            <Route path='/contact' element={<ContactUs/>}></Route>
 
            <Route path='/community' element={<Community/>}></Route>

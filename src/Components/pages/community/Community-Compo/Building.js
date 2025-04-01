@@ -1,9 +1,14 @@
 import React from 'react';
-
+import { useState } from 'react';
 import mainimg from "../../../../Assets/csr-page-banner.png";
 import first from "../../../../Assets/csr1.png";
+import ContactModal from '../../contact/contacts/ContactModal';
 
 export default function Building() {
+  
+  
+      const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className='w-full'>
          <section
@@ -25,6 +30,7 @@ export default function Building() {
             </p>
             <div>
               <a
+                onClick={() => setIsModalOpen(true)}
                 href="#"
                 className="inline-block mt-6 px-4 py-2 bg-white text-blue-900 font-semibold rounded-full shadow-md hover:bg-black hover:text-white transition"
               >
@@ -63,6 +69,11 @@ export default function Building() {
     </div>
   </div>
 </section>
+
+<ContactModal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                />
 
     </div>
   )

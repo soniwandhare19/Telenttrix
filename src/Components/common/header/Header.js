@@ -3,6 +3,8 @@ import { FiChevronDown, FiSearch, FiX, FiMenu } from "react-icons/fi";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import logo from "../../../Assets/logo.png";
 import { Link, Links } from "react-router-dom";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,48 +60,46 @@ const Header = () => {
 
       
         <nav className="hidden lg:flex space-x-6 items-center">
-          <a href="#" className="px-4 py-2 rounded-full bg-blue-700 text-white">
+          <Link to={"/"} className="px-4 py-2 rounded-full bg-blue-700 text-white">
             Home
-          </a>
+          </Link>
 
           <div className="relative group">
-            <a
-              href="#"
+          <Link to={"/"}
               className="flex items-center gap-1 hover:px-4 hover:py-2 hover:rounded-full hover:bg-blue-700 hover:text-white"
             >
               About Us <FiChevronDown />
-            </a>
+            </Link>
             <div className="absolute left-0 mt-2 px-2 hidden group-hover:block bg-gray-700 text-white shadow-md rounded-md w-52">
-              <a href="#" className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
+            <Link to={"/"}className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
                 Artech Advantage
-              </a>
-              <a href="#" className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
+              </Link>
+              <Link to={"/"} className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
                 Great Place to Work
-              </a>
-              <a href="#" className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
+              </Link>
+              <Link to={"/"} className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
                 Awards
-              </a>
-              <a href="#" className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
+              </Link>
+              <Link to={"/"} className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
                 Certifications and Accolades
-              </a>
+              </Link>
             </div>
             
           </div>
 
           <div className="relative group">
-            <a
-              href="#"
+          <Link to={"/solutions"}
               className="flex items-center gap-1 hover:px-4 hover:py-2 hover:rounded-full hover:bg-blue-700 hover:text-white"
             >
               Our Solutions <FiChevronDown />
-            </a>
+            </Link>
             <div className="absolute left-0 mt-2 px-2 hidden group-hover:block bg-gray-700 text-white shadow-md rounded-md w-52">
-              <a href="#" className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
+              <Link to={"/"} className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
               IT Solutions
-              </a>
-              <a href="#" className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
+              </Link>
+              <Link to={"/"} className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
               Consulting Services
-              </a>
+              </Link>
               <Link to='/' className="block px-4 py-3 border-b border-gray-400 hover:bg-gray-700">
               Project Management
               </Link>
@@ -139,6 +139,7 @@ const Header = () => {
           <FiSearch className="text-gray-600 text-lg cursor-pointer" />
           <FaLinkedinIn className="text-blue-700 text-lg" />
           <FaFacebookF className="text-blue-700 text-lg" />
+          <FaXTwitter className="text-blue-700 text-lg" />
           <FaInstagram className="text-blue-700 text-lg" />
         </nav>
 

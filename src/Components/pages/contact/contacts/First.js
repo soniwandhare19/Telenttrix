@@ -12,7 +12,7 @@ const ContactUs = () => {
 
         <>
             <section
-                className="relative w-full h-[400px] sm:h-[450px] md:h-[500px] bg-cover bg-center flex items-center"
+                className="relative w-full h-[400px] sm:h-[450px] md:h-[500px] bg-cover bg-center flex items-center md:mt-24"
                 style={{ backgroundImage: `url(${contactImg})` }}
             >
                 <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
