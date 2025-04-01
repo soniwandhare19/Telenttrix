@@ -6,18 +6,21 @@ import Values from './career-compo/Values';
 import Team from './career-compo/Team';
 import Certification from './career-compo/Certificate';
 import Pace from './career-compo/Pace';
+import OurTalent from './career-compo/OurTalent';
 
 const Careers = () => {
   return (
     <>
         <HeroSec/>
-        {/* <OurTalent/> */}
+        <Certification/>
+        <OurTalent/>
+        <Team/>
         <OurCulture/>
         <Values/>
         <OurBenefits/>
-        <Team/>
-        <Certification/>
-        <Pace/>
+        <Pace/>       
+        
+       
        
     </>
   )

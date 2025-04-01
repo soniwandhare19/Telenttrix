@@ -4,7 +4,7 @@ import Banner from '../../../../Assets/Careers-banner.png';
 const HeroSec = () => {
   return (
     <div
-      className="relative flex flex-col items-center md:items-end justify-center text-center p-5 bg-cover bg-center h-[451px]"
+      className="relative flex flex-col items-center md:items-end justify-center text-center p-5 bg-cover bg-center h-[451px] lg:mt-24"
       style={{ backgroundImage: `url(${Banner})` }}
     >
       <div className="bg-transparent bg-opacity-90 p-5 w-full md:w-[60%] lg:w-[43%]">

@@ -1,18 +1,19 @@
 import React from 'react';
-import Video from '../../../../assets/leftVideo.mp4';
+
+import Video from "../../../../Assets/leftVideo.mp4";
 
 const OurTalent = () => {
   return (
     <div className="bg-white py-10">
-      {/* Header Section */}
+   
       <div className="bg-[#ee4d42] text-white text-center py-6 text-[28px]  ">
         Our Talent Promise
         <div className="w-30 h-1 bg-[#fba91e] mx-auto my-2"></div>
       </div>
       
-      {/* Content Section */}
+
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-18 items-center px-4 md:px-14 mt-10">
-        {/* Video Section */}
+      
         <div>
           <video controls className="w-full">
             <source src={Video} type="video/mp4" />
@@ -20,7 +21,6 @@ const OurTalent = () => {
           </video>
         </div>
 
-        {/* Text Section */}
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">
             Empowering your career. <br /> Maximizing your intelligence.
