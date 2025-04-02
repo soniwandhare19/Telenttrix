@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import IndiaImg from "../../../../Assets/India-85x85.png";
 import USAImg from "../../../../Assets/USA-85x85.png";
@@ -28,11 +27,9 @@ const SecondContactUs = () => {
           <button className="bg-red-500 text-white px-8 py-1 rounded-full mt-8 border-2 border-red-500 transition-all duration-300 hover:bg-white hover:text-red-500">INDIA</button>
         </div>
       </div>
-
       <div className="bg-gradient-to-t from-blue-900 to-blue-700 text-white text-center px-6 py-2 rounded-full mb-4 mt-8 shadow-md">
         Also present in Mexico, Ireland, Poland & Singapore
       </div>
-
       <div className="flex flex-col md:flex-row gap-12 p-6">
         <div className="md:w-1/2">
           <h3 className="font-bold text-md text-gray-800 mb-8 mt-4">Global Corporate Headquarters</h3>
@@ -53,7 +50,6 @@ const SecondContactUs = () => {
             <p className="text-gray-700 font-semibold">973.998.2500</p>
           </div>
         </div>
-
         <div className="md:w-1/2">
           <h3 className="font-bold text-md text-gray-800 mb-2">Have any questions or concerns?</h3>
           <h3 className="font-bold text-md text-gray-800 mb-6">Contact us at the following email addresses:</h3>

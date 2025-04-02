@@ -20,6 +20,7 @@ const ContactModal = ({ isOpen, onClose }) => {
                 className="fixed inset-0 top-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-4 sm:p-6 md:p-10" 
                 onClick={onClose}
             >
+                
                 <div 
                     className="bg-white w-full max-w-md sm:max-w-lg md:max-w-lg lg:max-w-xl rounded-lg shadow-2xl p-6 relative" 
                     onClick={(e) => e.stopPropagation()} 

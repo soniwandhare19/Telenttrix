@@ -52,38 +52,29 @@ const TelOffer = () => {
             What We Offer
           </span>
         </h1>
-
         <div className="flex flex-col md:flex-row justify-center gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="flex flex-col w-full md:w-1/3 mb-8 h-auto lg:h-[684px] justify-between"
-            >
+              className="flex flex-col w-full md:w-1/3 mb-8 h-auto lg:h-[684px] justify-between">
               <div className="w-full flex justify-center mb-4 relative">
                 <div className="w-full overflow-hidden">
-                  <img
-                    src={service.imageSrc}
-                    alt={service.title}
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={service.imageSrc} alt={service.title} 
+                  className="w-full h-full object-cover"/>
                 </div>
               </div>
-
               <div className="flex flex-col flex-grow">
                 <h2 className="text-[26px] font-semibold text-[#dc2914] text-center mb-1">
                   {service.title}
                 </h2>
-
                 {service.tagline && (
                   <p className="font-bold text-center text-gray-800 text-[18px] mb-3">
                     {service.tagline}
                   </p>
                 )}
-
                 <p className="text-sm text-gray-900 font-semibold text-center mb-4 px-2">
                   {service.descriptionOne}
                 </p>
-
                 <p className="text-sm text-gray-900 text-center mb-4 px-2 font-semibold">
                   {service.description}
                 </p>
@@ -99,19 +90,16 @@ const TelOffer = () => {
                     ))}
                   </ul>
                 )}
-
                 {service.additionalText &&
                   service.additionalText.map((text, idx) => (
                     <p
                       key={idx}
-                      className="text-sm text-gray-900 font-semibold text-center mb-2 mt-2 px-2"
-                    >
+                      className="text-sm text-gray-900 font-semibold text-center mb-2 mt-2 px-2">
                       {text}
                     </p>
                   ))}
-
                 <div className="mt-auto pt-4 flex justify-center">
-                  <button className="bg-[#253e91] text-white py-2 px-6 rounded-3xl border hover:bg-white hover:text-[#253e91] transition duration-300 text-sm">
+                  <button className="bg-[#253e91] text-white py-2 px-12 rounded-3xl border-2 hover:bg-white hover:border-blue-900 hover:text-[#253e91] transition duration-300 text-md">
                     Know More
                   </button>
                 </div>

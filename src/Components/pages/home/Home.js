@@ -4,7 +4,7 @@ import TelOffer from "./home-compo/TelOffers";
 import CountriesComponent from "./home-compo/CountriesCompo";
 import CertificationComponent from "./home-compo/CertificationCompo";
 import AchieveCompo from "./home-compo/AchieveCompo";
-import WhyArtech from "./home-compo/WhyArtech";
+import WhyTelenttrix from "./home-compo/WhyTelenttrix";
 
 const Home = () => {
 
@@ -16,7 +16,7 @@ const Home = () => {
          <CountriesComponent />
          <AchieveCompo />
          <TelOffer />
-         <WhyArtech />
+         <WhyTelenttrix />
          <CertificationComponent />
 
 

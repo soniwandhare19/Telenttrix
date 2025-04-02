@@ -7,29 +7,32 @@ import Community from './Components/pages/community/Community';
 import Solution from './Components/pages/Solutions/Solutions';
 import Careers from './Components/pages/careers/Career';
 import Home from './Components/pages/home/Home';
+import AboutUs from './Components/pages/about/About';
 
-const App = () =>{
+const App = () => {
   return (
     <>
 
-     <Header/>
+      <Header />
 
-       <Routes>
+      <Routes>
 
-          <Route path="/" element={<Home/>} />
-          
-           <Route path='/contact' element={<ContactUs/>}></Route>
+        <Route path="/" element={<Home />} />
 
-           <Route path='/community' element={<Community/>}></Route>
+        <Route path='/about' element={<AboutUs />}></Route>
 
-           <Route path='/solutions' element={<Solution/>}></Route>
+        <Route path='/contact' element={<ContactUs />}></Route>
 
-           <Route path='/careers' element={<Careers/>}></Route>
+        <Route path='/community' element={<Community />}></Route>
 
-       </Routes>
-        
-     <Footer/>
-    
+        <Route path='/solutions' element={<Solution />}></Route>
+
+        <Route path='/careers' element={<Careers />}></Route>
+
+      </Routes>
+
+      <Footer />
+
     </>
   )
 }
